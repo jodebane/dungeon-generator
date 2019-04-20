@@ -10,7 +10,11 @@
 #-------------------------------------------------------------------------------
 import random
 import roomgenerator
+import gameinfogenerator
+##story intro
 
+def openingtext():
+    gameinfogenerator.storyintro()
 
 ##firststage - genarate series of rooms,
 def stage():
@@ -36,6 +40,7 @@ def stage():
 ##with xp and gold rewards
 
 def generatestages():
+    openingtext()
     stage()
 ##call function
 generatestages()
