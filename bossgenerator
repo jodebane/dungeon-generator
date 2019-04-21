@@ -1,0 +1,39 @@
+#-------------------------------------------------------------------------------
+# Name:        module1
+# Purpose:
+#
+# Author:      Joseph Foley
+#
+# Created:     20/04/2019
+# Copyright:   (c) Joseph Foley 2019
+# Licence:     <your licence>
+#-------------------------------------------------------------------------------
+
+import random;
+
+bossmonsters = ["Beholder", "Naga", "Garuda", "Bakunawa", "Green Dragon",
+"Cyclops", "red dragon", "thunder giant", "silver dragon", "orc mob boss"]
+
+bosstitles = ["of the red flame", "of breemar", "from the aetherland",
+"of yakunar", "- the grand guardian", "- the great warlord"]
+
+abilities = ["flames of death", "fires of valhalla", "swords of doom", "powerclaw fist",
+"flameswarm", "darkbolt rage", "raging fist", "double strike", "ultra beam"]
+
+stats = []
+
+def generateboss():
+    print("--DUNGEON BOSS--")
+    print(bossmonsters[random.randrange(0, len(bossmonsters))])
+    print(bosstitles[random.randrange(0, len(bosstitles))])
+    print("ABILITIES")
+    print(random.sample(abilities,k=2))
+    print("STATS")
+    print("Hit Points:", random.randrange(20,30))
+    print("Attack Power:", random.randrange(5,10))
+    print("Defense Score:", random.randrange(3,10))
+
+##generateboss()
+
+##CREDIT: Naga is mythlogical being from various Southeast Asian Mythologies,
+##garuda is mythical bird from Indonesian mythologies
