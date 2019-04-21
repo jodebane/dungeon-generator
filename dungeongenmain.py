@@ -11,12 +11,13 @@
 import random
 import roomgenerator
 import gameinfogenerator
+import bossgenerator
 ##story intro
 
 def openingtext():
     gameinfogenerator.storyintro()
 
-##firststage - genarate series of rooms,
+##firststage - genarate series of rooms, first and third stage
 def stage():
     smallrooms = random.randrange(2,5)
     for i in range(0, smallrooms):
@@ -34,7 +35,11 @@ def stage():
 
 ##secondstage - generate boss room or high difficulty encounter
 
-##thirdstage - genarate series of rooms
+def boss_stage():
+    bossgenerator.generateboss();
+
+
+
 
 ##fourth stage - generate boss room or high difficulty encouonter,
 ##with xp and gold rewards
@@ -42,5 +47,9 @@ def stage():
 def generatestages():
     openingtext()
     stage()
+    boss_stage()
+    stage()
+    boss_stage()
+
 ##call function
 generatestages()
