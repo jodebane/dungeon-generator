@@ -7,6 +7,8 @@
 # Created:     20/04/2019
 # Copyright:   (c) Joseph Foley 2019
 # Licence:     <your licence>
+##cross-cultural sources: Naga is mythical being in various Southeast Asian cultures, Garuda is bird-like creature from 
+Indonesian/Hindu religious traditions,and Bakunawa is a serpent-like creature from Filipino mythologies
 #-------------------------------------------------------------------------------
 
 import random;
@@ -37,3 +39,4 @@ def generateboss():
 
 ##CREDIT: Naga is mythlogical being from various Southeast Asian Mythologies,
 ##garuda is mythical bird from Indonesian mythologies
+##
